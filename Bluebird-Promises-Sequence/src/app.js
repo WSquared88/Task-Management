@@ -1,4 +1,4 @@
-
+var Promise = require("bluebird");
 var utils = require('./utils');
 
 var mongoConnector = utils.mongoConnector;

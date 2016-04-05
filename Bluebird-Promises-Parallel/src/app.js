@@ -4,10 +4,8 @@ var utils = require('./utils');
 var mongoConnector = utils.mongoConnector;
 var redisConnector = utils.redisConnector;
 
-var someStartupTask = function(resolve, reject) {
+var someStartupTask = function() {
     console.log('here would be some other task');
-    //reject(new Error("here would be a rejected error"));
-    resolve();
 };
 
 var startupComplete = function() {    
