@@ -16,18 +16,3 @@ var startupComplete = function(err) {
     
     console.log('tasks complete');
 };
-
-var tasks = {
-        
-        mongo: function(asyncCallback) {
-          mongoConnector(asyncCallback);
-        },
-        redis: function(asyncCallback) {
-          redisConnector(asyncCallback);
-        },
-        startupTask: function(asyncCallback) {
-           someStartupTask(asyncCallback); 
-        }
-    };
-
-async.series(tasks, startupComplete);
